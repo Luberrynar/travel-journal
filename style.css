@@ -5,8 +5,8 @@
   --accent: #0F6E8C;
   --highlight: #E8A33D;
   --line: #C9D6DB;
-  --font-head: "Newsreader", "Noto Serif Myanmar", Georgia, serif;
-  --font-body: "Noto Sans Myanmar", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-head: "Newsreader", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -18,7 +18,7 @@
 html { font-size: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
-  font-family: var(--font-body); line-height: 1.85;
+  font-family: var(--font-body); line-height: 1.7;
   padding: 1.5rem 1.25rem 4rem;
 }
 main, header, footer { max-width: 40rem; margin: 0 auto; }

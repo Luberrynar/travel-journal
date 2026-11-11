@@ -35,14 +35,14 @@ Never put CSS inside page files. Never create other folders without asking.
 ## 5. Design rules
 Edit colors and fonts ONLY through the CSS variables at the top of `style.css`.
 - Colors: background `#F2F6F7`, ink `#1B2A32`, accent (sea blue) `#0F6E8C`, highlight (marigold) `#E8A33D`, line `#C9D6DB`.
-- Fonts: headings Newsreader (serif), body Noto Sans Myanmar (falls back to system sans). Line length under 70 characters (`max-width: 40rem` for text).
+- Fonts: headings Newsreader (serif), body Source Sans 3 (falls back to system sans). Line length under 70 characters (`max-width: 40rem` for text).
 - Layout: left-aligned, single column, generous spacing. No card grids, no shadows, no gradients.
 - The signature element is the route line: a vertical line with dots on the home page (trips) and on the “Route” section of each trip page. Use it only for real sequences.
 - Must stay readable on a phone (test at 375 px width).
 
 ## 6. Page format for a trip (`pages/<trip-slug>.html`)
 Keep this order. Do not skip or reorder sections.
-1. `<header>`: link back to `../index.html`, then `<h1>` with the place name in Burmese and English (e.g. `ပုဂံ · Bagan`).
+1. `<header>`: link back to `../index.html`, then `<h1>` with the place name in English (e.g. `Bagan`).
 2. `<dl class="meta">`: Date, Place, Travelled with, Budget (optional rows may say `-`).
 3. Summary: one short paragraph, 2–3 sentences.
 4. `<h2>Route</h2>`: `<ol class="route">`, one `<li>` per stop, in visit order.
@@ -51,8 +51,8 @@ Keep this order. Do not skip or reorder sections.
 7. `<footer>`: link back to the home page.
 
 ## 7. Language rules
-- Page content: Burmese is the main language. Place names and section headings are bilingual or English as shown above.
-- Do not translate or rewrite the owner's own words. Fix only spelling mistakes, and say what you fixed.
+- ALL page content is written in English: titles, headings, paragraphs, tips, image captions, and file names. Set `<html lang="en">`.
+- Do not rewrite the owner's own words. Fix only spelling and grammar mistakes, and say what you fixed.
 - Never invent facts, prices, or opening hours. If something is missing, write `TODO: <what is missing>` as an HTML comment and tell the owner.
 
 ## 8. How to add a new trip (step by step)
