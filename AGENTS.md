@@ -1,4 +1,4 @@
-# AGENTS.md — My Travel Journal (ခရီးသွားမှတ်တမ်း)
+# AGENTS.md — My Travel Journal
 
 Read this file fully before creating or editing anything in this repository.
 
